@@ -10,11 +10,6 @@ jobs:
     runs-on: self-hosted
 
     steps:
-      - name: Pull latest code
-        run: |
-          cd /home/ubuntu/Projects/portfolio-app
-          git pull origin main
-
       - name: Deploy using Docker
         run: |
           cd /home/ubuntu/Projects/portfolio-app
